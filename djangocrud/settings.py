@@ -83,11 +83,25 @@ WSGI_APPLICATION = 'djangocrud.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
-    'default': dj_database_url.config(
-        default='mysql://root:123456789@localhost:3306/tasks'
-    )
+DATABASES = { 
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django_db',
+        'USER': 'django_user',
+        'PASSWORD': 'django_pass',
+        'HOST': 'db',  # el nombre del servicio en docker-compose.yml
+        'PORT': '3306',
+    }
 }
+
+
+#{
+    #'default': dj_database_url.config(
+    #    default='mysql://root:123456789@localhost:3306/tasks'
+    #)
+#}
+
+
 
 # {
 #     'ENGINE': 'django.db.backends.mysql',
@@ -97,6 +111,8 @@ DATABASES = {
 #     'HOST': 'localhost',
 #     'PORT': '3306'
 # }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
