@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/AlejoR96/GestorDeTareas.git', branch: 'main'
+                git url: 'https://github.com/AlejoR96/GestorDetasks.git', branch: 'main'
             }
         }
 
@@ -43,7 +43,7 @@ pipeline {
         stage('Build/Package') {
             steps {
                 // Si tienes algo como un Dockerfile o paquete
-                sh 'docker build -t gestordetareas:latest .'
+                sh 'docker build -t gestordetasks:latest .'
             }
         }
 

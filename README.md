@@ -1,4 +1,4 @@
-# CRUD DE GESTIÓN DE TAREAS 
+# CRUD DE GESTIÓN DE tasks 
 ## Aplicacion desarrollada con python con framework de django y una base de datos Mysql 
 
 <img width="1412" height="561" alt="image" src="https://github.com/user-attachments/assets/718bd3cb-c1d9-487e-9f98-e86b6dd8423f" />
